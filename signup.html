@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Learn & Grow</title>
+    <link rel="stylesheet" href="signup-style.css">
+</head>
+<body>
+    <div class="signup-container">
+        <form id="signup-form" class="signup-form">
+            <h2>Create Your Account</h2>
+            
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <span class="error" id="fullNameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <span class="error" id="confirmPasswordError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number (Optional)</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber">
+                <span class="error" id="phoneNumberError"></span>
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="interests">Select Your Interests</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="interests" value="web-development"> Web Development
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="data-science"> Data Science
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="digital-marketing"> Digital Marketing
+                    </label>
+                </div>
+            </div> -->
+
+            <div class="form-group">
+                <label for="accountType">Account Type</label>
+                <select id="accountType" name="accountType" required>
+                    <option value="">Select Account Type</option>
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                    <option value="instructor">Instructor</option>
+                </select>
+                <span class="error" id="accountTypeError"></span>
+            </div>
+
+            <div class="form-group terms">
+                <label>
+                    <input type="checkbox" id="termsAgreement" required>
+                    I agree to the Terms of Service and Privacy Policy
+                </label>
+                <span class="error" id="termsError"></span>
+            </div>
+
+            <button type="submit" class="signup-button">Create Account</button>
+
+            <div class="login-link">
+                Already have an account? <a href="login.html">Log In</a>
+            </div>
+        </form>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h2>Account Created Successfully!</h2>
+            <p>Welcome to Learn & Grow. You can now log in to your account.</p>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <script src="signup-script.js"></script>
+</body>
+</html>
