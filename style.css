@@ -1,3 +1,4 @@
+
 /* Global Styles */
 * {
     margin: 0;
@@ -47,7 +48,6 @@ nav h3 {
     border: 1px solid rgba(0, 0, 0, 0.6);
     width: 20rem;
 }
-
 .navbar .search-container button {
     float: right;
     padding: 5px 10px;
@@ -99,6 +99,7 @@ nav h3 {
 }
 
 .navbar ul li a:hover {
+    /* background-color: #fbcf21; */
     border-bottom: 2px solid rgb(2, 104, 106);
 }
 
@@ -240,6 +241,7 @@ nav h3 {
 }
 
 .web-lang{
+    /* display: grid; */
     height: 600px;
     width: 100%;
     background-color: #6bccdb;
@@ -472,205 +474,4 @@ nav h3 {
     .section ul {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
-
-    nav {
-        flex-direction: column; 
-        align-items: center;
-        padding: 10px 0;
-    }
-
-    .navbar ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
-
-    .navbar .search-container {
-        width: 100%;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    .navbar input[type="text"] {
-        width: 80%;
-        font-size: 16px;
-        margin: 0 auto;
-    }
-
-    .navbar .search-container button {
-        width: 80%;
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    .homebox, .home-box1, .home-box2 {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .home-box1 {
-        width: 100%;
-        height: auto;
-    }
-
-    .home-box1 h1 {
-        font-size: 28px;
-        margin: 20px 0;
-    }
-
-    .home-box1 p {
-        font-size: 18px;
-        margin: 10px 0;
-    }
-
-    .home-box1 h4 {
-        font-size: 16px;
-        margin: 10px 0;
-    }
-
-    .box-all-lang {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .boxs {
-        height: auto;
-        padding: 15px;
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .button {
-        width: 100%;
-        font-size: 18px;
-        padding: 15px;
-    }
-
-    .boxs h4 {
-        font-size: 18px;
-    }
-}
-
-/* For screens smaller than 480px (mobiles) */
-@media (max-width: 480px) {
-    .navbar input[type="text"] {
-        width: 90%;
-    }
-
-    .navbar .search-container button {
-        width: 90%;
-        padding: 10px;
-    }
-
-    .home-box1 h1 {
-        font-size: 24px;
-    }
-
-    .home-box1 p {
-        font-size: 16px;
-    }
-
-    .boxs h4 {
-        font-size: 16px;
-    }
-
-    .button {
-        width: 100%;
-        font-size: 16px;
-    }
-
-    .home-box1, .home-box2 {
-        height: auto;
-        padding: 10px;
-    }
-}
-
-/* For tablets or small laptops */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .homebox {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .home-box1 {
-        width: 60%;
-    }
-
-    .home-box2 {
-        width: 35%;
-    }
-
-    .home-box1 h1 {
-        font-size: 36px;
-    }
-
-    .home-box1 p {
-        font-size: 18px;
-    }
-
-    .home-box1 h4 {
-        font-size: 18px;
-    }
-
-    .box-all-lang {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 40px;
-    }
-
-    .boxs h4 {
-        font-size: 20px;
-    }
-
-    .button {
-        font-size: 18px;
-    }
-}
-
-/* For screens larger than 1024px */
-@media (min-width: 1024px) {
-    .homebox {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .home-box1, .home-box2 {
-        width: 48%;
-    }
-
-    .box-all-lang {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-    }
-
-    .home-box1 h1 {
-        font-size: 42px;
-    }
-
-    .home-box1 p {
-        font-size: 21px;
-    }
-
-    .boxs h4 {
-        font-size: 22px;
-    }
-
-    .button {
-        font-size: 20px;
-    }
-}
+                                      }
